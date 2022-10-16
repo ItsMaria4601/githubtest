@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+<body>
+  <form>
+    <div class="container">
+      <form action="home.html" method="post">
+        <label for="usrname">Email : </label>
+        <input type="text" style="margin-left: 1.8rem;" id="username" pattern="[^ @]*@[^ @]*" required title="Enter a valid email using @" />
+        <br>
+        <label for="psw">Password :</label>
+        <input type="password" name="password" id="psw" required />
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+        
+        <div class="buttonchk" onclick="myFunction()">
+          <div class="popup">?
+            <span class="popuptext" id="myPopup">
+              Password should have lowercase <br />
+              Password should contain numbers <br />
+              Password should have a capital letter <br />
+              Password should have atleast 8 characters
+            </span>
+          </div>
+        </div>
+       <input type="submit" style="margin-left: 9rem; width: 65px;" value="Submit" />
+        <!-- small button -->
+      
+       
+      </form>
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="LoginFunc.js"></script>
+    
+
+</body>
+
+</html>

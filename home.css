@@ -1,0 +1,43 @@
+body {
+  margin-top:0px;
+  margin-bottom:10px;
+}
+  
+  ul {
+    margin-bottom: 10cm;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 10%;
+    background-color: #9251d8;
+    position: fixed;
+    height: 12cm;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(253, 253, 253);
+    padding: 40px 40px;
+    text-decoration: underline;
+    font-size: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  li a.active {
+    background-color: #59e2b0;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(186, 101, 194);
+    color: white;
+  }
+  h1 {
+    color: rgb(138, 9, 143);
+     margin-left: 9cm; 
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+     font-size: 100px;
+     margin-top:3cm;
+
+  }
